@@ -28,7 +28,7 @@ TechPulse connects event discovery with a student's activity, skills, interests 
 ## Main features
 
 - TechPulse home page matching the supplied visual direction
-- Blue/orange flowing hero background
+- Blue/gold flowing hero background
 - Orbit-style popular event animation
 - Cards travel along an elliptical path with gentle pauses
 - Click an event to trigger a circular zoom transition into its event page
