@@ -93,7 +93,7 @@ The app ships with realistic seeded data so every feature is demo-ready out of t
 
 Deployed as a static site on **Vercel**.
 
-🔗 **Live Demo:** _[add your Vercel deployment link here]_
+🔗 **Live Demo:** tech-pulse-web-sprint-2026.vercel.app
 
 To deploy your own copy: push this repo to GitHub, import it into Vercel, and deploy — no build command or environment variables needed since it's a static site.
 
