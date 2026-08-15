@@ -82,8 +82,11 @@ Because this is a static frontend, the site does not claim to have real platform
 ## Deployment
 
 The project can be deployed as a static site to:
-- Vercel
 
+- Netlify
+- Vercel
+- GitHub Pages
+- Cloudflare Pages
 
 Upload the four project files and serve `index.html`.
 

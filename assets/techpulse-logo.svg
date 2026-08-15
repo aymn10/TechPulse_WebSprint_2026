@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 90">
+<rect width="330" height="90" fill="white" fill-opacity="0"/>
+<g transform="translate(4 14)">
+<path d="M2 36h24l11-30 13 48 12-57 12 65 14-47 12 27 14-13h32" fill="none" stroke="#13b7ef" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 49h27l13-15 13 9 15-19 14 11 14-10 13 6h43" fill="none" stroke="#ff6b16" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="61" cy="0" r="5" fill="#13b7ef"/><circle cx="101" cy="44" r="5" fill="#ff6b16"/>
+</g>
+<text x="135" y="48" font-family="Arial, sans-serif" font-size="31" font-weight="800" fill="#0b2b54">TECH<tspan fill="#ff6b16">PULSE</tspan></text>
+<text x="137" y="66" font-family="Arial, sans-serif" font-size="7.8" letter-spacing=".7" fill="#63758a">GLOBAL TECH EVENTS &amp; CONFERENCES</text>
+</svg>

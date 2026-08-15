@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="TechPulse — discover, compete and build at global technology events.">
+<title>TechPulse — Global Tech Events</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <div class="ambient"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="TechPulse home">
+      <span class="brand-mark" aria-hidden="true"><img src="assets/techpulse-constellation.svg" alt="" /></span>
+      <span class="brand-copy"><strong>TECH<span>PULSE</span></strong><small>GLOBAL TECH EVENTS &amp; CONFERENCES</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#events">Events</a><a href="#jobs">Jobs</a><a href="#practice">Practice</a>
+      <button class="nav-dropdown" id="resourcesBtn" aria-expanded="false">Resources <span class="resource-arrow">⌄</span></button><a class="saved-nav" href="#saved">★ Saved Events</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.6"></circle><path d="m16 16 5 5"></path></svg></button>
+      <a class="icon-btn" href="#calendar" aria-label="Calendar"><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="16" rx="2"></rect><path d="M7 3v4M17 3v4M3.5 9h17"></path></svg></a>
+      <button class="icon-btn" id="notificationsBtn" aria-label="Notifications"><svg viewBox="0 0 24 24"><path d="M6 17h12l-1.3-2.2V10a4.7 4.7 0 0 0-9.4 0v4.8L6 17Z"></path><path d="M10 20h4"></path></svg></button>
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode"><svg id="themeIcon" viewBox="0 0 24 24"><path d="M20.3 14.5A8.5 8.5 0 0 1 9.5 3.7 8.5 8.5 0 1 0 20.3 14.5Z"></path></svg></button>
+      <a class="avatar" id="profileNavBtn" href="#profile" aria-label="Profile">SA</a>
+      <a class="corporate-outline" href="#corporates">Host an Event</a>
+      <button class="login-btn" id="loginBtn">Sign up / Login</button>
+      <button class="mobile-menu" id="mobileMenuBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="resources-popover" id="resourcesPopover">
+    <a href="#resource/blog">Blog <span>↗</span></a><a href="#resource/stories">Customer Stories <span>↗</span></a>
+    <a href="#resource/guides">Planning Guides <span>↗</span></a><a href="#resource/webinars">Webinars &amp; Events <span>↗</span></a>
+    <a href="#resource/help">Help Desk <span>↗</span></a>
+  </div>
+
+  <main id="main"></main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div><a class="brand footer-brand" href="#home"><span class="brand-mark"><img src="assets/techpulse-constellation.svg" alt="" /></span><span class="brand-copy"><strong>TECH<span>PULSE</span></strong><small>GLOBAL TECH EVENTS &amp; CONFERENCES</small></span></a><p>Discover. Compete. Build. One intelligent home for the next generation of technology talent.</p></div>
+      <div><h4>Students</h4><a href="#events">Events</a><a href="#calendar">My Calendar</a><a href="#rounds">My Rounds</a><a href="#certificates">Certificates</a><a href="#people">Find My People</a></div>
+      <div><h4>Companies</h4><a href="#corporates">Host an Event</a><a href="#corporates">Hiring Challenges</a></div>
+      <div><h4>Resources</h4><a href="#resource/blog">Blog</a><a href="#resource/stories">Customer Stories</a><a href="#resource/guides">Planning Guides</a><a href="#resource/webinars">Webinars &amp; Events</a><a href="#resource/help">Help Desk</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 TechPulse</span><span>Built for CodeForge WebSprint 2026</span><span>LinkedIn · GitHub · Instagram · X</span></div>
+  </footer>
+</div>
+
+<div class="search-overlay" id="searchOverlay" aria-hidden="true">
+  <div class="search-panel">
+    <button class="close-modal" id="closeSearch">×</button>
+    <div class="search-heading"><span class="eyebrow">GLOBAL SEARCH</span><h2>Find your next opportunity.</h2></div>
+    <div class="search-input-wrap"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.6"></circle><path d="m16 16 5 5"></path></svg><input id="globalSearch" placeholder="Search events, skills, companies, people…" autocomplete="off"></div>
+    <div class="search-results" id="searchResults"></div>
+    <div class="recent-searches"><div class="section-label">Recent searches <button id="clearSearches">Clear</button></div><div id="recentSearchList"></div></div>
+  </div>
+</div>
+
+<div class="modal" id="modal" aria-hidden="true"><div class="modal-card" id="modalCard"></div></div>
+<div class="toast" id="toast"></div>
+<div class="transition-layer" id="transitionLayer"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

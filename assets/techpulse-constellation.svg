@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 72">
+<defs>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="2.2" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <radialGradient id="star" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#fffdf5"/>
+    <stop offset=".55" stop-color="#f4ddb0"/>
+    <stop offset="1" stop-color="#e7b45c"/>
+  </radialGradient>
+</defs>
+<g fill="none" stroke="#f0eee7" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" opacity=".92">
+  <path d="M9 39 L28 39 L44 25 L58 50 L74 13 L91 39 L110 39 L126 28 L141 39"/>
+  <path d="M28 39 L44 39 L58 50 M74 13 L91 39 M110 39 L126 28 L141 39"/>
+</g>
+<g filter="url(#glow)">
+  <circle cx="9" cy="39" r="3.2" fill="url(#star)"/>
+  <circle cx="28" cy="39" r="3.7" fill="url(#star)"/>
+  <circle cx="44" cy="25" r="4.2" fill="url(#star)"/>
+  <circle cx="58" cy="50" r="3.9" fill="url(#star)"/>
+  <circle cx="74" cy="13" r="4.8" fill="url(#star)"/>
+  <circle cx="91" cy="39" r="3.9" fill="url(#star)"/>
+  <circle cx="110" cy="39" r="3.3" fill="url(#star)"/>
+  <circle cx="126" cy="28" r="4.1" fill="url(#star)"/>
+  <circle cx="141" cy="39" r="3.1" fill="url(#star)"/>
+</g>
+<g stroke="#fffdf5" stroke-width="1.1" opacity=".78">
+  <path d="M74 3v20M64 13h20"/>
+  <path d="M44 17v16M36 25h16"/>
+  <path d="M126 20v16M118 28h16"/>
+</g>
+</svg>
